@@ -16,6 +16,7 @@ object Project : Project({
 
     vcsRoot(OdsPlatform_EdFiOds)
     vcsRoot(OdsPlatform_EdFiOdsImplementation)
+    vcsRoot(OdsPlatform_EdFiExtensions)
 
     buildType(Deploy_And_Smoke_Test_YearSpecific)
     buildType(OdsApiSmokeTestStaging)

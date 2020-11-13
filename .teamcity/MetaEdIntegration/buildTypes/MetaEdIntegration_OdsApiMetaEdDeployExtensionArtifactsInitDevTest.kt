@@ -32,7 +32,7 @@ object MetaEdIntegration_OdsApiMetaEdDeployExtensionArtifactsInitDevTest : Build
     }
 
     vcs {
-        root(AbsoluteId("OdsPlatform_EdFiExtensions"), "=> Ed-Fi-Extensions")
+        root(_Self.vcsRoots.OdsPlatform_EdFiExtensions, "=> Ed-Fi-Extensions")
     }
 
     steps {

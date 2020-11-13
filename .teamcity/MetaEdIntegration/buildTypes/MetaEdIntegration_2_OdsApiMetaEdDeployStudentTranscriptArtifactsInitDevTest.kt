@@ -21,7 +21,7 @@ object MetaEdIntegration_2_OdsApiMetaEdDeployStudentTranscriptArtifactsInitDevTe
     }
 
     vcs {
-        root(AbsoluteId("OdsPlatform_EdFiExtensions"), "+:Extensions/EdFi.Ods.Extensions.Homograph=>Ed-Fi-ODS-Implementation/Application/EdFi.Ods.Extensions.Homograph")
+        root(_Self.vcsRoots.OdsPlatform_EdFiExtensions, "+:Extensions/EdFi.Ods.Extensions.Homograph=>Ed-Fi-ODS-Implementation/Application/EdFi.Ods.Extensions.Homograph")
     }
 
     steps {
