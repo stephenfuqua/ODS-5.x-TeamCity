@@ -27,7 +27,7 @@ object Packages_EdFiOdsCodeGen : BuildType({
     }
 
     vcs {
-        root(AbsoluteId("OdsPlatform_EdFiOds"))
+        root(_Self.vcsRoots.OdsPlatform_EdFiOds)
     }
 
     steps {

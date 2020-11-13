@@ -24,8 +24,8 @@ object PackagesNetCore31_EdFiOdsUtilitiesMigration : BuildType({
     }
 
     vcs {
-        root(RelativeId("PackagesNetCore31_EdFiMigrationUtility"), "=> %MigrationUtilityRoot%")
-        root(AbsoluteId("OdsPlatform_EdFiOds"), "+:Application/EdFi.Ods.Standard/Artifacts => Ed-Fi-ODS/Application/EdFi.Ods.Standard/Artifacts")
+        root(Packages.vcsRoots.PackagesNetCore31_EdFiMigrationUtility, "=> %MigrationUtilityRoot%")
+        root(_Self.vcsRoots.OdsPlatform_EdFiOds, "+:Application/EdFi.Ods.Standard/Artifacts => Ed-Fi-ODS/Application/EdFi.Ods.Standard/Artifacts")
     }
 
     steps {

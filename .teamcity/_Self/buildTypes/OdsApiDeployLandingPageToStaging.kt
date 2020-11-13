@@ -40,7 +40,7 @@ object OdsApiDeployLandingPageToStaging : BuildType({
     }
 
     vcs {
-        root(AbsoluteId("OdsPlatform_EdFiOdsImplementation"), "=> Ed-Fi-ODS-Implementation")
+        root(_Self.vcsRoots.OdsPlatform_EdFiOdsImplementation, "=> Ed-Fi-ODS-Implementation")
 
         cleanCheckout = true
     }

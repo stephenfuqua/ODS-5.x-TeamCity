@@ -31,9 +31,9 @@ object Packages_CreateDatabaseTemplate : Template({
     }
 
     vcs {
-        root(AbsoluteId("OdsPlatform_EdFiOds"), "+:. => Ed-Fi-ODS")
-        root(AbsoluteId("OdsPlatform_EdFiOdsImplementation"), "+:. => Ed-Fi-ODS-Implementation")
-        root(AbsoluteId("OdsPlatform_Packages_EdFiStandard"), "+:. => Ed-Fi-Standard")
+        root(_Self.vcsRoots.OdsPlatform_EdFiOds, "+:. => Ed-Fi-ODS")
+        root(_Self.vcsRoots.OdsPlatform_EdFiOdsImplementation, "+:. => Ed-Fi-ODS-Implementation")
+        root(Packages.vcsRoots.OdsPlatform_Packages_EdFiStandard, "+:. => Ed-Fi-Standard")
 
         cleanCheckout = true
     }

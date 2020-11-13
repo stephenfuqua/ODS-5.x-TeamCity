@@ -34,8 +34,8 @@ object Packages_PostgreSQLBinaries : BuildType({
     }
 
     vcs {
-        root(AbsoluteId("OdsPlatform_EdFiOds"), "+:. => Ed-Fi-ODS")
-        root(AbsoluteId("OdsPlatform_EdFiOdsImplementation"), "+:. => Ed-Fi-ODS-Implementation")
+        root(_Self.vcsRoots.OdsPlatform_EdFiOds, "+:. => Ed-Fi-ODS")
+        root(_Self.vcsRoots.OdsPlatform_EdFiOdsImplementation, "+:. => Ed-Fi-ODS-Implementation")
 
         cleanCheckout = true
     }

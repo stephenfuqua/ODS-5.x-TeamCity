@@ -8,8 +8,9 @@ package Packages.vcsRoots
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
 import jetbrains.buildServer.configs.kotlin.v2019_2.vcs.GitVcsRoot
 
-object Packages_EdFiMigrationUtility : GitVcsRoot({
+object PackagesNetCore31_EdFiMigrationUtility : GitVcsRoot({
     name = "Ed-Fi-MigrationUtility"
+    id("PackagesNetCore31_EdFiMigrationUtility")
     url = "https://github.com/%github.organization%/Ed-Fi-MigrationUtility.git"
     branch = "%git.branch.default%"
     branchSpec = "%git.branch.specification%"

@@ -8,8 +8,9 @@ package Packages.vcsRoots
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
 import jetbrains.buildServer.configs.kotlin.v2019_2.vcs.GitVcsRoot
 
-object Packages_EdFiAllianceEdFiStandard : GitVcsRoot({
+object OdsPlatform_Packages_EdFiStandard : GitVcsRoot({
     name = "Ed-Fi-Alliance/Ed-Fi-Standard"
+    id("OdsPlatform_Packages_EdFiStandard")
     url = "https://github.com/%github.organization%/Ed-Fi-Standard.git"
     branch = "development"
     branchSpec = "%git.branch.specification%"

@@ -41,8 +41,8 @@ object Packages_EdFiExtensionsTemplate : Template({
     }
 
     vcs {
-        root(AbsoluteId("OdsPlatform_EdFiOds"), "+:. => Ed-Fi-ODS")
-        root(AbsoluteId("OdsPlatform_EdFiOdsImplementation"), "+:. => Ed-Fi-ODS-Implementation")
+        root(_Self.vcsRoots.OdsPlatform_EdFiOds, "+:. => Ed-Fi-ODS")
+        root(_Self.vcsRoots.OdsPlatform_EdFiOdsImplementation, "+:. => Ed-Fi-ODS-Implementation")
         root(AbsoluteId("OdsPlatform_EdFiExtensions"), "+:Extensions/%extension.project% => Ed-Fi-Extensions/Extensions/%extension.project%", "+:LICENSE.txt => LICENSE.txt")
 
         cleanCheckout = true

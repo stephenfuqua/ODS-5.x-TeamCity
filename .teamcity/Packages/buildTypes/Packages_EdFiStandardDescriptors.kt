@@ -40,8 +40,8 @@ object Packages_EdFiStandardDescriptors : BuildType({
 
     vcs {
         root(Packages.vcsRoots.Packages_EdFiAllianceEdFiStandard, "=> Ed-Fi-Standard")
-        root(AbsoluteId("OdsPlatform_EdFiOds"), "+:. => Ed-Fi-ODS")
-        root(AbsoluteId("OdsPlatform_EdFiOdsImplementation"), "+:. => Ed-Fi-ODS-Implementation")
+        root(_Self.vcsRoots.OdsPlatform_EdFiOds, "+:. => Ed-Fi-ODS")
+        root(_Self.vcsRoots.OdsPlatform_EdFiOdsImplementation, "+:. => Ed-Fi-ODS-Implementation")
         root(Packages.vcsRoots.Packages_EdFiMigrationUtility, "=> %MigrationUtilityRoot%")
     }
 
