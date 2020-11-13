@@ -6,12 +6,16 @@
 package _Self
 
 import _Self.buildTypes.*
+import _Self.vcsRoots.*
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
 import jetbrains.buildServer.configs.kotlin.v2019_2.Project
 import jetbrains.buildServer.configs.kotlin.v2019_2.projectFeatures.buildReportTab
 
 object Project : Project({
     description = "Primary ODS/API builds"
+
+    vcsRoot(OdsPlatform_EdFiOds)
+    vcsRoot(OdsPlatform_EdFiOdsImplementation)
 
     buildType(Deploy_And_Smoke_Test_YearSpecific)
     buildType(OdsApiSmokeTestStaging)
