@@ -10,6 +10,7 @@ import jetbrains.buildServer.configs.kotlin.v2019_2.vcs.GitVcsRoot
 
 object OdsPlatform_EdFiOds : GitVcsRoot({
     name = "Ed-Fi-ODS"
+    id = "OdsPlatform_EdFiOds"
     url = "https://github.com/%github.organization%/Ed-Fi-ODS.git"
     branch = "%git.branch.default%"
     branchSpec = "%git.branch.specification%"
