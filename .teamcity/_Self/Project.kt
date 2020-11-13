@@ -53,6 +53,10 @@ object Project : Project({
         param("version.suite", "3")
         param("datastandard.version", "v3.2")
         param("odsapi.package.suffix", ".Suite%version.suite%")
+        param("git.branch.specification", """
+            refs/heads/(*)
+            refs/tags/(*)
+        """.trimIndent())
     }
 
     features {
