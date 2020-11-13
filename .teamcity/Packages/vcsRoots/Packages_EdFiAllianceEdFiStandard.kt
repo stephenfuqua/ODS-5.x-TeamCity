@@ -10,15 +10,7 @@ import jetbrains.buildServer.configs.kotlin.v2019_2.vcs.GitVcsRoot
 
 object Packages_EdFiAllianceEdFiStandard : GitVcsRoot({
     name = "Ed-Fi-Alliance/Ed-Fi-Standard"
-    url = "git@github.com:Ed-Fi-Alliance/Ed-Fi-Standard.git"
+    url = "https://github.com/%github.organization%/Ed-Fi-Standard.git"
     branch = "development"
     branchSpec = "%git.branch.specification%"
-    userNameStyle = GitVcsRoot.UserNameStyle.NAME
-    checkoutSubmodules = GitVcsRoot.CheckoutSubmodules.IGNORE
-    serverSideAutoCRLF = true
-    useMirrors = false
-    authMethod = uploadedKey {
-        uploadedKey = "EdFiBuildAgent"
-        passphrase = "zxx8ec32f4456a24c4c01db759a77efea148f7feb32b64096a7"
-    }
 })
