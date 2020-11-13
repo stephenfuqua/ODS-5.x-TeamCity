@@ -39,10 +39,10 @@ object Packages_EdFiStandardDescriptors : BuildType({
     }
 
     vcs {
-        root(Packages.vcsRoots.Packages_EdFiAllianceEdFiStandard, "=> Ed-Fi-Standard")
+        root(Packages.vcsRoots.OdsPlatform_Packages_EdFiStandard, "=> Ed-Fi-Standard")
         root(_Self.vcsRoots.OdsPlatform_EdFiOds, "+:. => Ed-Fi-ODS")
         root(_Self.vcsRoots.OdsPlatform_EdFiOdsImplementation, "+:. => Ed-Fi-ODS-Implementation")
-        root(Packages.vcsRoots.Packages_EdFiMigrationUtility, "=> %MigrationUtilityRoot%")
+        root(Packages.vcsRoots.PackagesNetCore31_EdFiMigrationUtility, "=> %MigrationUtilityRoot%")
     }
 
     steps {

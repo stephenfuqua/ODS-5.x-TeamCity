@@ -14,8 +14,8 @@ object Project : Project({
     id("Packages")
     name = "Packages"
 
-    vcsRoot(Packages_EdFiAllianceEdFiStandard)
-    vcsRoot(Packages_EdFiMigrationUtility)
+    vcsRoot(OdsPlatform_Packages_EdFiStandard)
+    vcsRoot(PackagesNetCore31_EdFiMigrationUtility)
 
     buildType(Packages_EdFiOdsCodeGen)
     buildType(Packages_EdFiOdsExtensionsTpdm)
