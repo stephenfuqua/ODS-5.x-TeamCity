@@ -12,7 +12,7 @@ import jetbrains.buildServer.configs.kotlin.v2019_2.Project
 import jetbrains.buildServer.configs.kotlin.v2019_2.projectFeatures.buildReportTab
 
 object Project : Project({
-    description = "Primary ODS/API builds"
+    description = "Ed-Fi ODS / API Suite 3 Version 5.x"
 
     vcsRoot(OdsPlatform_EdFiOds)
     vcsRoot(OdsPlatform_EdFiOdsImplementation)
